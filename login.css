@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+  }
+a{
+    color: #f2f5f7;
+}
+body {
+    background-color: #69919B;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .login {
+    overflow: hidden;
+    z-index: 15;
+    background-color: white;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: -webkit-transform 300ms, box-shadow 300ms;
+    -moz-transition: -moz-transform 300ms, box-shadow 300ms;
+    transition: transform 300ms, box-shadow 300ms;
+    box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+  }
+  .login::before, .login::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 40%;
+    z-index: -1;
+  }
+  .login::before {
+    left: 40%;
+    bottom: -130%;
+    background-color: #69919B;
+    -webkit-animation: wawes 6s infinite linear;
+    -moz-animation: wawes 6s infinite linear;
+    animation: wawes 6s infinite linear;
+  }
+  .login::after {
+    left: 35%;
+    bottom: -125%;
+    background-color: #B1CCCB;
+    -webkit-animation: wawes 7s infinite;
+    -moz-animation: wawes 7s infinite;
+    animation: wawes 7s infinite;
+  }
+  .login > input {
+    font-family: "Poppins", sans-serif;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+  }
+  .login > button {
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: #192A2E;
+    -webkit-transition: background-color 300ms;
+    -moz-transition: background-color 300ms;
+    transition: background-color 300ms;
+  }
+  .login > button:hover {
+    background-color: #69919B;
+  }
+  
+  @-webkit-keyframes wawes {
+    from {
+      -webkit-transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  @-moz-keyframes wawes {
+    from {
+      -moz-transform: rotate(0);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  @keyframes wawes {
+    from {
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  body{
+      overflow-x: hidden;
+  }
+  nav{
+    height: 6rem;
+    width: 100vw;
+    background-color: #192a2e;
+    color: #f2f5f7;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    font-size: 15px;
+  }
+  
+  /*Styling logo*/
+  .logo{
+    padding:1vh 1vw;
+    text-align: center;
+}
+.logo img {
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none; 
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .nav-links li a{
+    text-decoration: none;
+    margin: 0 0.7vw;
+  }
+  .nav-links li a:hover {
+    color: #69919B;
+  }
+  .nav-links li {
+    position: relative;
+  }
+  .nav-links li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: #69919B;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+    margin: 0 0 0 10%;
+  }
+  .nav-links li a:hover::before{
+    width: 80%;
+  }
+
+/*Styling Buttons*/
+.login-button{
+  background-color: transparent;
+  border: 1.5px solid #f2f5f7;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  color: #f2f5f7;
+  margin-left: 2vw;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.login-button:hover {
+  color: #131418;
+  background-color: #f2f5f7;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+.join-button{
+  color: #131418;
+  background-color: #69919B;
+  border: 1.5px solid #69919B;
+  border-radius: 2em;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.join-button:hover {
+  color: #f2f5f7;
+  background-color: transparent;
+  border:1.5px solid #f2f5f7;
+  transition: all ease-in-out 350ms;
+}
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+  width: 30px;
+  height:3px;
+  background: #f2f5f7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+/*Stying for small screens*/
+@media screen and (max-width: 800px){
+  nav{
+      position: fixed;
+      z-index: 3;
+  }
+  .hamburger{
+      display:block;
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2;
+      transition: all 0.7s ease;
+  }
+  .nav-links{
+      position: fixed;
+      background: #131418;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(50px at 90% -20%);
+      -webkit-clip-path: circle(50px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+  }
+  .nav-links.open{
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+  }
+  .nav-links li{
+      opacity: 0;
+  }
+  .nav-links li:nth-child(1){
+      transition: all 0.5s ease 0.2s;
+  }
+  .nav-links li:nth-child(2){
+      transition: all 0.5s ease 0.4s;
+  }
+  .nav-links li:nth-child(3){
+      transition: all 0.5s ease 0.6s;
+  }
+  .nav-links li:nth-child(4){
+      transition: all 0.5s ease 0.7s;
+  }
+  .nav-links li:nth-child(5){
+      transition: all 0.5s ease 0.8s;
+  }
+  .nav-links li:nth-child(6){
+      transition: all 0.5s ease 0.9s;
+      margin: 0;
+  }
+  .nav-links li:nth-child(7){
+      transition: all 0.5s ease 1s;
+      margin: 0;
+  }
+  li.fade{
+      opacity: 1;
+  }
+}
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  transition: all 0.7s ease;
+  width:0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+.home:hover > ion-icon {
+  color: #69919B;
+}
+header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c6d9d3;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+header .overlay h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9rem;
+  text-shadow: 25px -15px rgba(25, 42, 46, 0.04);
+  color: #fff;
+  mix-blend-mode: overlay;
+}
+header .overlay h1 span {
+  margin-top: -2em;
+  padding-top: 0.5em;
+  display: block;
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+}
+header .parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+header .parallax div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+header .parallax .one {
+  background-image: url("https://raw.githubusercontent.com/joshuaward/codepen-images/master/mountains-1.svg");
+  z-index: 4;
+}
+header .parallax .two {
+  background-image: url("https://raw.githubusercontent.com/joshuaward/codepen-images/master/mountains-2.svg");
+  z-index: 3;
+}
+header .parallax .three {
+  background-image: url("https://raw.githubusercontent.com/joshuaward/codepen-images/master/mountains-3.svg");
+  z-index: 2;
+}
+header .parallax .four {
+  background-image: url("https://raw.githubusercontent.com/joshuaward/codepen-images/master/mountains-4.svg");
+  z-index: 1;
+}
+header .parallax .five {
+  background-image: url("https://raw.githubusercontent.com/joshuaward/codepen-images/master/mountains-5.svg");
+  z-index: 0;
+}
