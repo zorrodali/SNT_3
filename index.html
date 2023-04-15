@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Ziyad</title>
+  <title>Géolocalisation</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"><link rel="stylesheet" href="./style.css">
 
 </head>
@@ -18,9 +18,9 @@
     </div>
     <ul class="nav-links">
         <li><a href="#1">Frise chrnologique</a></li>
-        <li><a href="#2">Titre 2</a></li>
-        <li><a href="#3">Titre 3</a></li>
-        <li><a href="#4">Titre 4</a></li>
+        <li><a href="#2">Définition</a></li>
+        <li><a href="#3">Principe de fonctionnement</a></li>
+        <li><a href="#4">Galileo</a></li>
         <a href="login.html"><button class="login-button">Login</button></a>
         <a href="Sign_up.html"><button class="join-button">Sign up</button></a>
         <div>
@@ -32,11 +32,10 @@
         </div>
     </ul>
 </nav>
-<!-- partial:index.partial.html -->
 <header>
   <div class="overlay">
     <div class="parallax">
-      <h1>Ziyad<span>le goat</span></h1>
+      <h1>Géolocalisation<span>localisation, cartographie et mobilité</span></h1>
       <div class="one"></div>
       <div class="two"></div>
       <div class="three"></div>
@@ -51,7 +50,7 @@
     <br>
     <br>
     <br>
-    <h1>Titre n1</h1>
+    <h1>Frise chrnologique</h1>
     <br>
     <section id=timeline>
 	<div class="demo-card-wrapper">
@@ -63,7 +62,11 @@
 				<h2>Ptolémée <span class="small">réalise la première carte du monde</span> </h2>
 			</div>
 			<div class="body">
-				<img src="http://placehold.it/1000x500" alt="Graphic">
+				<img class="iamge__img" src="ptoleme.png" alt="Graphic">
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Ptolémée :</div>
+            <div class="image__description">carte réalisé au II siècle après J.C. par Ptolémée</div>
+          </div>
 			</div>
 		</div>
     <div class="demo-card demo-card--step1">
@@ -71,10 +74,14 @@
 				<div class="number-box">
 					<span>1490</span>
 				</div>
-				<h2>Réalisation <span class="small">des grandes cartes maritimes pour les grandes expéditions</span> </h2>
+				<h2>Réalisation <span class="small">de portulan pour les grandes expéditions</span> </h2>
 			</div>
 			<div class="body">
-				<img src="http://placehold.it/1000x500" alt="Graphic">
+				<img class="iamge__img" src="portulan.jpg" alt="Graphic" >
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Portulan :</div>
+            <div class="image__description">réalisé suite au monopole des Ottomans sur les routes commercials menant vers l'Asie</div>
+          </div>
 			</div>
 		</div>
 
@@ -86,9 +93,12 @@
 				<h2>Invention <span class="small">du sextant</span> </h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
+          <img class="iamge__img" src="sextant.jpg" alt="Graphic"  width="500" height="290">
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Sextant :</div>
+            <div class="image__description">Instrument qui permet de mesurer la hauteur des astres à partir d'un navire, malgré l'instabilité de l'observateur</div>
+          </div>
+      </div>
 		</div>
 
 		<div class="demo-card demo-card--step3">
@@ -96,11 +106,14 @@
 				<div class="number-box">
 					<span>1973</span>
 				</div>
-				<h2><span class="small">Subtitle</span> Adaptation</h2>
+				<h2>Conception<span class="small"> du premier GPS à des fins militaire</span></h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
+				<img class="iamge__img" src="militaire.png" alt="Graphic">
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">GPS militaire :</div>
+            <div class="image__description">Mis en place par le département de défense des États-Unis, système comportant 24 satellites </div>
+          </div>
 			</div>
 		</div>
 
@@ -109,11 +122,14 @@
 				<div class="number-box">
 					<span>1995</span>
 				</div>
-				<h2><span class="small">Subtitle</span> Consistency</h2>
+				<h2>Utilisation<span class="small">du GPS aux activités scientifiques et civiles</span></h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
+        <img class="iamge__img" src="GPS.jpg" alt="Graphic" >
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">GPS civiles :</div>
+            <div class="image__description">Permet de se guider sur la route, ou d'optimiser un trajet</div>
+          </div>
 			</div>
 		</div>
 
@@ -122,11 +138,14 @@
 				<div class="number-box">
 					<span>2024</span>
 				</div>
-				<h2><span class="small">Subtitle</span> Conversion</h2>
+				<h2>Fin prévisionelle<span class="small">du déploiement de Galileo</span></h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
+		    <img class="iamge__img" src="galileo.png" alt="Graphic" >
+          <div class="image__overlay image__overlay--blur">
+            <div class="image__title">Galileo</div>
+            <div class="image__description">Système de positionnement mis en place par L'Union Européenne</div>
+          </div>
 			</div>
 		</div>
 
@@ -140,7 +159,7 @@
     <br>
     <br>
     <section id=paragraphe>
-    <h1>Titre n2</h1>
+    <h1>Définition</h1>
     <br>
     <p>L’ euthanasie pose d’abord le problème de la souffrance dans la vie de la personne. Il y a souffrance physique, il y a souffrance morale. Il convient de se donner les moyens de bien les soulager, sachant que la souffrance morale est souvent plus profonde, plus délicate à déceler et donc plus difficile à soulager que la souffrance physique. Au-delà de la question de la souffrance qui est mise en avant, c’est la question de mourir dans la dignité qui se pose avec force. Qu’est-ce que la dignité ? Qu’est-ce que mourir dans la dignité ? La question de l’euthanasie nous amène à réfléchir aux moyens de comprendre le patient et ses vrais besoins. C’est la problématique du sens de la vie avec la maladie ou le handicap qui l’affecte le plus : elle nécessite du temps pour que la personne concernée puisse y apporter un début de réponse.</p>
     <br id=3>
@@ -149,7 +168,7 @@
     <br>
     <br>
     <section id=paragraphe>
-    <h1>Titre n3</h1>
+    <h1>Principe de fonctionnement</h1>
     <br>
     <p>Avec, parfois, le sentiment d’avoir été à la hauteur, parfois pas. « J’ai eu ce patient, jeune, atteint d’une sclérose latérale amyotrophique, qui m’a expliqué d’emblée qu’il souhaitait un suicide assisté, raconte un médecin généraliste en milieu rural. Il avait déjà connu ça dans sa famille, il en connaissait l’issue. Financièrement, il n’avait pas les moyens d’aller à l’étranger. Je l’ai pris en charge dans l’hôpital local où j’ai pu mettre la sédation profonde terminale [un endormissement profond associé à l’arrêt des traitements]. Ma main qui soigne est aussi celle qui a signé le certificat de décès. Je garde le sentiment de ne pas avoir pu répondre à sa demande. » -> se trouve impuissant face à cette situation, le role du médecin et de soigner ou non de tuer</p>
     <br id=4>
@@ -158,12 +177,12 @@
     <br>
     <br>
     <section id=paragraphe>
-    <h1>Titre n4</h1>
+    <h1>Galileo</h1>
     <br>
     <p>Avec, parfois, le sentiment d’avoir été à la hauteur, parfois pas. « J’ai eu ce patient, jeune, atteint d’une sclérose latérale amyotrophique, qui m’a expliqué d’emblée qu’il souhaitait un suicide assisté, raconte un médecin généraliste en milieu rural. Il avait déjà connu ça dans sa famille, il en connaissait l’issue. Financièrement, il n’avait pas les moyens d’aller à l’étranger. Je l’ai pris en charge dans l’hôpital local où j’ai pu mettre la sédation profonde terminale [un endormissement profond associé à l’arrêt des traitements]. Ma main qui soigne est aussi celle qui a signé le certificat de décès. Je garde le sentiment de ne pas avoir pu répondre à sa demande. » -> se trouve impuissant face à cette situation, le role du médecin et de soigner ou non de tuer</p>
     </section>
     <footer>
-    <p><a>Copyright &copy 2023 by @Ziyad</a></p>
+    <p><a>Copyright &copy 2023 by @Ziyad & @Yuva</a></p>
 </footer>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
