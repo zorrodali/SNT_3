@@ -736,7 +736,14 @@ body {
 .resize {
   width: 75%;
   height: auto;
-  border: 2px solid black;
+  border: 5px solid black;
+  float: center;
+  margin: 50px;
+}
+.resize1 {
+  width: 35%;
+  height: auto;
+  /* border: 5px solid black; */
   float: center;
   margin: 50px;
 }
