@@ -731,3 +731,12 @@ body {
 }
 
 
+
+
+.resize {
+  width: 75%;
+  height: auto;
+  border: 2px solid black;
+  float: center;
+  margin: 50px;
+}
