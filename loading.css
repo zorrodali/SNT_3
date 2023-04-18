@@ -42,7 +42,7 @@
   z-index: 5;
 }
 p{
-  color: black;
+  color: yellow;
  font-size: 30px;
   text-align: justify;
   display: flex;
@@ -75,13 +75,12 @@ h1 {
 }
 
 
-/* section{
+section{
   position:relative;
   width: 100%;
   height:100vh;
-  background: linear-gradient(to top, #00FF00 20%, #ff3434 45%);
   overflow: hidden;
-} */
+}
 section .wave{
   position: absolute;
   bottom:0;
