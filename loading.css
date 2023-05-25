@@ -47,6 +47,7 @@ p{
   text-align: justify;
   display: flex;
   height: 100vh;
+  z-index: 1100;
 
 }
 h1 {
